@@ -1,0 +1,31 @@
+actions_formulaire_traitement:
+  prise_charge: //div[@id='dropdragster']/section/div/section/nav/div/button
+  supprimer: //button[@class='btn mainBtn ng-binding ng-scope']
+  actualiser_pour_compte_de: //button[@class='btn mainBtn ng-scope']
+  valider: //button[normalize-space()='Valider']
+  renvoyer_demandeur: //button[normalize-space()='Renvoyer au demandeur']
+
+tableau_traitement_declaration:
+        reponse_dccp: '//*[@id="status-buttons"]/a[2]/span[1]'
+        selection_premiere_ligne: //div[@id='dropdragster']/section/div/section/div/div/table/tbody/tr/td[7]
+        nouvelle_declaration_pour: //a[@class='btn mainBtn']
+        type_declaration: '(//td[@class="ng-binding"])[2]'
+        ouvrir_filtre_statut: //span[@ng-hide='searchList.declarationStatusCheckAll']
+        selectionner_statut_tous: //*[@id="dropdragster"]/section/div/section/div/div[1]/table/thead/tr[2]/th[9]/accordion/div/div/div[2]/div/ul/li[7]/input
+        selectionner_statut_valide: //*[@id="dropdragster"]/section/div/section/div/div[1]/table/thead/tr[2]/th[9]/accordion/div/div/div[2]/div/ul/li[5]/input
+        selectionner_statut_fermer: //*[@id="dropdragster"]/section/div/section/div/div[1]/table/thead/tr[2]/th[9]/accordion/div/div/div[2]/div/ul/li[6]/input
+        selectionner_statut_dccp: //li[normalize-space()='A traiter par DCCP']//input[@type='checkbox']
+        verification_statut: '(//td[@class="ng-binding"])[9]'
+        
+     
+traitement_declaration:
+        confirmation_prise_charge: //button[@class='btn btn-primary']
+        confirmation_validation: //button[contains(text(),"Confirmer")]
+        actualiser_controle: //span[contains(text(),"Actualisé pour contrôle")]
+        non_conflit_interet: //div[@id="module-content"]/div[1]/div/div[1]/div/div/div/div[1]/div[1]
+        oui_conflit_interet: //div[@id="module-content"]/div[1]/div/div[1]/div/div/div/div[1]/div[3]
+        commentaire: //textarea[@id='conflicts_precision']
+        commentaire_renvoie_demandeur: //textarea[@id='comment']
+        qualif_validation_controle: //*[@id="fence"]
+        qualif_commentaire_controle: //textarea[@id='comment']
+
